@@ -1,0 +1,16 @@
+{"message":"Title required","level":"error"}
+{"message":"url required","level":"error"}
+{"message":"Bookmark with the id 1 not found","level":"error"}
+{"message":"Bookmark deleted","level":"info"}
+{"message":"Bookmark with the id e5fa1544-6b0a-4219-a652-e514661462d7 not found","level":"error"}
+{"message":"Bookmark deleted","level":"info"}
+{"message":"Bookmark with id 883e782c-96c8-451b-9cfa-561b7e170387 not found","level":"error"}
+{"message":"Bookmark deleted","level":"info"}
+{"message":"Title required","level":"error"}
+{"message":"url required","level":"error"}
+{"message":"Title required","level":"error"}
+{"message":"url required","level":"error"}
+{"message":"Bookmark deleted","level":"info"}
+{"message":"Bookmark with id 1 not found","level":"error"}
+{"message":"Bookmark deleted","level":"info"}
+{"message":"Bookmark with id 17444659-8a55-40f3-8edc-6040d05480be not found","level":"error"}

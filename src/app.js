@@ -4,8 +4,7 @@ const morgan = require('morgan')
 const cors = require('cors')
 const helmet = require('helmet')
 const { NODE_ENV } = require('./config')
-const bookmarks = require('./store')
-const logger = require('./logger')
+const bookmarksRouter = require('./bookmarks/bookmarks-router')
 
 const app = express()
 
@@ -27,32 +26,12 @@ app.use(function authenticate(req, res, next){
     next()
 })
 
+app.use(bookmarksRouter);
+
 
 app.get('/', (req, res) => {
-    res.send('Hello, bookmarks API!')
+    res.send('Welcome to the bookmarks API. Please make a request to the /bookmark endpoint to gather data')
 })
-
-app.get('/bookmarks', (req, res) => {
-    res.send(bookmarks)
-})
-
-app.get('/bookmarks/:id', (req, res) => {
-    const { id } = req.params
-    const bookmark = bookmarks.find(mark => mark.id == id)
-
-    if(!bookmark){
-        logger.error(`Bookmark with id ${id} not found`)
-        res.status(404).send('Not found')
-    }
-
-    res.send(bookmark)
-})
-
-
-
-
-
-
 
 
 app.use(function errorHandler(error, req, res, next){

@@ -8,4 +8,4 @@ const bookmarks = [
     }
 ]
 
-module.exports = bookmarks
+module.exports = { bookmarks }
